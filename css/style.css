@@ -38,7 +38,7 @@ body{
 .mobPicture{
 	width: 200px;
 	height: 175px;
-	background-color:red;
+	background-color:purple;
 	float:right;
 	position:relative;
 }
@@ -47,19 +47,51 @@ body{
 	clear:both;
 	width: 100px;
 	height: 50px;
-	margin-top:50px;
 }
 .playerCastButton{
 	float:left;
 	width:100px;
 	height:50px;
-	margin-top:50px;
 }	
 .playerBattle{
-	
+
 }
 #itemBar{
+	float:left;
+	text-align:right;
 	width: 200px;
 	height:25px;
 	clear:both;	
+}
+#hpContainer{
+	float:left;
+	clear:left;
+	width:200px;
+	height:20px;
+	border:1px solid black;	
+}
+#playerHP{
+	float:left;
+	clear:left;
+	width:100%;/*change this width */
+	margin-top:1px;
+    border:1px solid white;
+    background-color:#F30;
+    height:17px;
+}
+#hpContainer2{
+	float:right;
+	clear:right;
+	width:200px;
+	height:20px;
+	border:1px solid black;	
+}
+#mobHP{
+	float:right;
+	clear:right;
+	width:100%;/*change this width */
+	margin-top:1px;
+    border:1px solid white;
+    background-color:#F30;
+    height:17px;	
 }
