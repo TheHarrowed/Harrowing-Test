@@ -8,4 +8,5 @@ function submitPress(){
 	alert("Poop!");
 	curExp+=5;
 	document.getElementById("exp").innerHTML="Experience: " + curExp;
+	
 }

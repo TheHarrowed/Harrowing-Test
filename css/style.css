@@ -27,3 +27,20 @@ body{
 	width:75px;
 	height: 25px;	
 }
+.playerPicture{
+	width: 200px;
+	height: 175px;
+	background-color:blue;
+	float:left;
+	clear:both;
+}
+.mobPicture{
+	width: 200px;
+	height: 175px;
+	background-color:red;
+	float:right;
+}
+.playerArtackButton{
+	position: fixed;
+	bottom: 250px;
+}
