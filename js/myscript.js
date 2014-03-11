@@ -25,8 +25,8 @@ function submitPress(){
 	
 	document.getElementById('battleWindow').style.visibility = 'visible';
 	
-	var x = document.getElementById("mobSelect").selectedIndex;
-	var y = document.getElementById("mobSelect").options;
+	 x = document.getElementById("mobSelect").selectedIndex;
+	 y = document.getElementById("mobSelect").options;
 	
 	document.getElementById("playerName").innerHTML= userName;
 	document.getElementById("mobName").innerHTML= y[x].text;
@@ -46,6 +46,11 @@ function playerAttack(){
 		document.getElementById("progress-bar").style.width = getPercent(curExp, expNeeded) + "%";
 		mobCurHP=20;
 		document.getElementById('battleWindow').style.visibility = 'hidden';
+		var para=document.createElement("p");
+		var node=document.createTextNode("You have BLASTED the: " + y[x].text);
+		para.appendChild(node);
+		var element=document.getElementById("chatWindow");
+		element.appendChild(para);
 	}
 	if (curExp>=expNeeded){
 		var expRemain = expNeeded - curExp;
