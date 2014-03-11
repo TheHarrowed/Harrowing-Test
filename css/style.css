@@ -13,7 +13,7 @@ body{
 	display:inline-block;
 }
 #battleWindow{
-	
+	visibility: hidden;
 }
 .actionSelect{
 	width:250px;	
@@ -78,7 +78,7 @@ body{
 	clear:left;
 	width:100%;/*change this width */
 	margin-top:1px;
-    border:1px solid white;
+    border:1px solid black;
     background-color:#F30;
     height:17px;
 }
@@ -94,7 +94,7 @@ body{
 	clear:right;
 	width:100%;/*change this width */
 	margin-top:1px;
-    border:1px solid white;
+    border:1px solid black;
     background-color:#F30;
     height:17px;	
 }
