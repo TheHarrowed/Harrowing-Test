@@ -12,13 +12,16 @@ body{
 	background-color:#999;
 	display:inline-block;
 }
+#battleWindow{
+	
+}
 .actionSelect{
 	width:250px;	
 	height: 25px;
 	float:left;
 	clear:both;
 }
-.mobSelect{
+#mobSelect{
 	width: 250px;	
 	height: 25px;
 	float:left;
