@@ -19,7 +19,6 @@ function onPageLoad(){
 
 function submitPress(){
 	alert("Fight!!");
-	curExp+=5;
 	
 	document.getElementById('battleWindow').style.visibility = 'visible';
 	
@@ -28,6 +27,7 @@ function submitPress(){
 	
 	document.getElementById("playerName").innerHTML= userName;
 	document.getElementById("mobName").innerHTML= y[x].text;
+	document.getElementById("mobHP").style.width= getPercent(mobCurHP, mobMaxHP) + "%";
 
 }
 
@@ -45,12 +45,15 @@ function playerAttack(){
 		document.getElementById('battleWindow').style.visibility = 'hidden';
 	}
 	if (curExp>=expNeeded){
+		var expRemain = expNeeded - curExp;
 		curLevel++;
 		document.getElementById("playerLevel").innerHTML = "Level: " + curLevel;
-		curExp=0;
+		curExp=expRemain;
 		document.getElementById("exp").innerHTML="Experience: " + curExp;
 		expNeeded=expNeeded*1.5;	
 		document.getElementById("progress-bar").style.width = getPercent(curExp, expNeeded) + "%";
+		str+=2;
+		document.getElementById("playerStr").innerHTML = "Strength: " + str;
 	}
 }
 
