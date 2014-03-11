@@ -22,7 +22,7 @@ body{
 #battleWindow{
 	visibility: hidden;
 }
-.actionSelect{
+#actionSelect{
 	width:250px;	
 	height: 25px;
 	float:left;
