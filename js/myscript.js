@@ -18,6 +18,9 @@ function onPageLoad(){
 }
 
 function submitPress(){
+	
+	var whichAction = (document.getElementById("actionSelect").selectedIndex);
+	
 	alert("Fight!!");
 	
 	document.getElementById('battleWindow').style.visibility = 'visible';
