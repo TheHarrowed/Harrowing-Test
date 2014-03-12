@@ -82,6 +82,12 @@ function clearWindow(){
 		document.getElementById('battleWindow').style.visibility = 'hidden';
 		document.getElementById('skillWindow').style.visibility = 'hidden';
 		document.getElementById('mapWindow').style.visibility = 'hidden';
+		var whichAction = (document.getElementById("actionSelect").selectedIndex);
+		if(whichAction===0){
+				document.getElementById('mobList').style.visibility = 'visible';
+		}else{
+				document.getElementById('mobList').style.visibility = 'hidden';
+		}
 }
 function goldGain(amt){
 	var str = amt + " gold!";
