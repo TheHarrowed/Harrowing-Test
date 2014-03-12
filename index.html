@@ -67,7 +67,10 @@
                 	<p id="playerName">Player</p>
                 </center>
    	      </div>
-          
+          <div id="dmgOutput">
+          	<p id="dmgDisplay1">You hit the enemy for</p>
+          	<p id="dmgDisplay2">5!</p>
+          </div>
       </div>
    	  <div class="mobBattle">
        	<div class="mobPicture">
@@ -85,16 +88,16 @@
       <div id="hpContainer">
     	<div id="playerHP">
   		</div>
-        
-        <button class="playerAttackButton" type="button" onclick="playerAttack()"> Attack </button> 
- 		<button class="playerCastButton" type="button" onclick="playerCast()"> Cast </button> 
+        <div id="battleButtons">
+        	<button class="playerAttackButton" type="button" onclick="playerAttack()"> Attack </button> 
+ 			<button class="playerCastButton" type="button" onclick="playerCast()"> Cast </button> 
       
- 	 <div id="itemBar">
-    	<select class="itemSelect">
-    		<option value="0">--------------Use Item--------------</option>
-        </select>
-    </div>
-        
+ 	 		<div id="itemBar">
+    			<select class="itemSelect">
+    			<option value="0">--------------Use Item--------------</option>
+        		</select>
+    		</div>
+       </div> 
         
 	</div>  
         

@@ -42,6 +42,7 @@ function submitPress(){
 
 function playerAttack(){
 	mobCurHP=mobCurHP-5;
+	document.getElementById('dmgOutput').style.visibility = 'visible';
 	document.getElementById("mobHP").style.width= getPercent(mobCurHP, mobMaxHP) + "%";
 	if (mobCurHP <= 0){
 		alert("You win!")
@@ -56,6 +57,7 @@ function playerAttack(){
 		para.innerHTML="You have laid waste to the " + "<b>" + y[x].text + "</b>" + ", earning " + goldGain(5);
 		var element=document.getElementById("chatWindow");
 		element.appendChild(para);
+		document.getElementById('dmgOutput').style.visibility = 'hidden';
 	}
 	if (curExp>=expNeeded){
 		var expRemain = expNeeded - curExp;
