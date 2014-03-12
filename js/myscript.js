@@ -53,8 +53,7 @@ function playerAttack(){
 		mobCurHP=20;
 		document.getElementById('battleWindow').style.visibility = 'hidden';
 		var para=document.createElement("p");
-		var node=document.createTextNode("You have BLASTED the: " + y[x].text + " and earned 5 gold.");
-		para.appendChild(node);
+		para.innerHTML="You have laid waste to the " + "<b>" + y[x].text + "</b>" + ", earning " + goldGain(5);
 		var element=document.getElementById("chatWindow");
 		element.appendChild(para);
 	}
@@ -81,4 +80,9 @@ function clearWindow(){
 		document.getElementById('battleWindow').style.visibility = 'hidden';
 		document.getElementById('skillWindow').style.visibility = 'hidden';
 		document.getElementById('mapWindow').style.visibility = 'hidden';
+}
+function goldGain(amt){
+	var str = amt + " gold!";
+	var ans = str.fontcolor("goldenrod");
+	return ans;
 }
