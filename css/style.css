@@ -21,7 +21,8 @@ body{
 	top:-300px;
 	background-color:#FFF;
 	border:4px solid red;
-	border-radius:15;	
+	border-radius:15;
+	overflow:scroll;	
 }
 #battleWindow{
 	visibility: hidden;

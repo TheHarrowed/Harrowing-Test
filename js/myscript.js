@@ -76,3 +76,9 @@ function getPercent(cur, max){
 	var ans = mid/max;
 	return ans;		
 }
+
+function clearWindow(){
+		document.getElementById('battleWindow').style.visibility = 'hidden';
+		document.getElementById('skillWindow').style.visibility = 'hidden';
+		document.getElementById('mapWindow').style.visibility = 'hidden';
+}
