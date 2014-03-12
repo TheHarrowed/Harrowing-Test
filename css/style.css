@@ -105,3 +105,9 @@ body{
     background-color:#F30;
     height:17px;	
 }
+#mapWindow{
+	visibility:hidden;
+	position:relative;
+	right:-150px;
+	top:80px;
+}

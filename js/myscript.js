@@ -20,18 +20,20 @@ function onPageLoad(){
 function submitPress(){
 	
 	var whichAction = (document.getElementById("actionSelect").selectedIndex);
+	if(whichAction === 0){
+		alert("Fight!!");
 	
-	alert("Fight!!");
+		document.getElementById('battleWindow').style.visibility = 'visible';
 	
-	document.getElementById('battleWindow').style.visibility = 'visible';
+		 x = document.getElementById("mobSelect").selectedIndex;
+		 y = document.getElementById("mobSelect").options;
 	
-	 x = document.getElementById("mobSelect").selectedIndex;
-	 y = document.getElementById("mobSelect").options;
-	
-	document.getElementById("playerName").innerHTML= userName;
-	document.getElementById("mobName").innerHTML= y[x].text;
-	document.getElementById("mobHP").style.width= getPercent(mobCurHP, mobMaxHP) + "%";
-
+		document.getElementById("playerName").innerHTML= userName;
+		document.getElementById("mobName").innerHTML= y[x].text;
+		document.getElementById("mobHP").style.width= getPercent(mobCurHP, mobMaxHP) + "%";
+	}else if(whichAction === 5){
+		document.getElementById('mapWindow').style.visibility = 'visible';
+	}
 }
 
 function playerAttack(){
