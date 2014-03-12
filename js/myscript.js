@@ -31,7 +31,11 @@ function submitPress(){
 		document.getElementById("playerName").innerHTML= userName;
 		document.getElementById("mobName").innerHTML= y[x].text;
 		document.getElementById("mobHP").style.width= getPercent(mobCurHP, mobMaxHP) + "%";
-	}else if(whichAction === 5){
+	}else if(whichAction ===2){
+		document.getElementById('skillWindow').style.visibility = 'visible';	
+	}
+	
+	else if(whichAction === 5){
 		document.getElementById('mapWindow').style.visibility = 'visible';
 	}
 }
