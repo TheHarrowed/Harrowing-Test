@@ -1,5 +1,4 @@
-var userName = "HarroweD";
-var pooName = "PoooooPe";
+var userName;
 var curExp = 0;
 var expNeeded=100;
 var gold = 0;
@@ -13,6 +12,7 @@ var curLevel = 1;
 
 
 function onPageLoad(){
+	userName = prompt("Enter your name");
 	document.getElementById("userName").innerHTML=userName;
 	document.getElementById("userName").style.fontWeight="bold";
 }
@@ -49,7 +49,7 @@ function playerAttack(){
 		mobCurHP=20;
 		document.getElementById('battleWindow').style.visibility = 'hidden';
 		var para=document.createElement("p");
-		var node=document.createTextNode("You have BLASTED the: " + y[x].text);
+		var node=document.createTextNode("You have BLASTED the: " + y[x].text + " and earned 5 gold.");
 		para.appendChild(node);
 		var element=document.getElementById("chatWindow");
 		element.appendChild(para);
